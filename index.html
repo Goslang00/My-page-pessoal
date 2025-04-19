@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My page</title>
+
+  <!-- Fontes -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Triodion&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Codystar:wght@300;400&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Anton&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Boldonse&display=swap" rel="stylesheet">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Wallpoet&display=swap');
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      text-align: center;
+      margin: 0;
+      padding: 0;
+      background-image: url(https://wallpaperaccess.com/full/6272395.gif);
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      background-attachment: fixed;
+      font-family: sans-serif;
+    }
+
+    .conteudo {
+      background-image: linear-gradient(to right, rgba(0, 0, 0, 0.7), rgba(0, 0, 255, 0.7));
+      border-radius: 5cm;
+      padding: 20px;
+      margin: 50px auto;
+      max-width: 900px;
+      box-shadow: 0 0 15px rgba(255, 255, 255, 0.2);
+    }
+
+    .conteudo3 {
+      background-image: linear-gradient(to right, blue, black);
+      text-align: center;
+      border-radius: 2cm;
+      margin: 1rem;
+      padding: 100px;
+    }
+
+    ul {
+      text-align: center;
+      display: inline-block;
+      font-style: italic;
+      color: rgb(0, 255, 234);
+    }
+
+    ol {
+      border-radius: 20cm;
+      font-style: normal;
+      font-family: "Codystar";
+      text-align: center;
+      color: white;
+    }
+
+    h1 {
+      font-family: "Anton", sans-serif;
+      font-weight: 500;
+      color: #ffffff;
+      text-shadow: 1px 2px 2px rgb(196, 196, 196);
+    }
+
+    p {
+      font-family: "Playfair Display", sans-serif;
+      font-weight: 900;
+      color: rgb(6, 197, 255);
+    }
+
+    h2 {
+      font-family: "Boldonse";
+      color: #00eeff;
+    }
+
+    .conteudo2 {
+      background-image: url(https://i.pinimg.com/originals/a9/ad/18/a9ad18728c3469960e792cdbe3396062.gif);
+      color: white;
+      border: 1px solid #000;
+      padding: 10px;
+      width: 200px;
+      margin: 30px auto;
+      font-family: "Boldonse";
+      border-radius: 10px;
+      text-align: center;
+    }
+
+    img {
+      border-radius: 2cm;
+    }
+
+    .conteudo4 {
+      font-family: "Boldonse";
+      background-image: url(https://i.pinimg.com/originals/a9/ad/18/a9ad18728c3469960e792cdbe3396062.gif);
+      border: 1px solid black;
+      padding: 10px;
+      border-radius: 5px;
+      width: 150px;
+      margin: 20px auto;
+      text-align: center;
+      position: relative;
+    }
+
+    .conteudo5 {
+      background-color: #000;
+      margin: 5cm auto;
+      padding: 30px;
+      color: white;
+      max-width: 900px;
+      border-radius: 10px;
+    }
+
+    .footer {
+      background-color: #210358;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+      max-width: 800px;
+      margin: 30px auto;
+      border-radius: 20px;
+      box-shadow: 10px 10px 5px rgba(47, 0, 255, 0.2);
+    }
+
+    .icon img {
+      border: 1px solid rgb(0, 255, 179);
+      width: 90px;
+      height: auto;
+      border-radius: 5cm;
+      box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+      display: block;
+      margin: 20px auto;
+    }
+
+    /* RESPONSIVIDADE */
+    @media (max-width: 768px) {
+      .conteudo, .conteudo2, .conteudo4, .conteudo5, .footer {
+        width: 90%;
+        margin: 20px auto;
+        padding: 15px;
+      }
+
+      h1 {
+        font-size: 1.5rem;
+      }
+
+      p, li {
+        font-size: 1rem;
+      }
+
+      .icon img {
+        width: 200px;
+        height: auto;
+        border-radius: 5cm;
+        border: 1px solid rgb(0, 255, 179);
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      ul, ol {
+        text-align: left;
+      }
+    }
+  </style>
+</head>
+
+<div class="icon">
+  <img src="https://i.pinimg.com/736x/14/c3/20/14c3208659c3e30ea48e6c1cf6b5bae5.jpg" alt="Ícone">
+</div>
+
+
+
+<body>
+
+  <div class="conteudo">
+    <h1>Seja-bem vindo ao meu site pessoal!</h1>
+    <p>
+      Meu nome é <b>Oliveira</b>, sou estudante fanático por programação e suas vertentes.
+      Atualmente, estudo <strong>desenvolvimento web</strong> e <strong>Python</strong>.
+    </p>
+
+    <h2>Lista de cursos</h2>
+    <ul type="square">
+      <li>
+        Cursos básicos, desenvolvimento web do Alura
+        <ol type="I">
+          <li>HTML</li>
+          <li>CSS básico</li>
+          <li>Conceitos básicos</li>
+          <li>Python, Back-end</li>
+        </ol>
+      </li>
+      <li>
+        Curso básico de HTML, Jornada do Dev.
+        <ol type="I" start="5">
+          <li>HTML básico</li>
+          <li>Formatações de texto</li>
+          <li>Citações e endereço</li>
+          <li>Mídia</li>
+          <li>Formulário</li>
+          <li>Âncora e links</li>
+        </ol>
+      </li>
+    </ul>
+  </div>
+
+  <div class="conteudo2">
+    <a href="pagina2.html" title="Social">Redes sociais</a>
+  </div>
+
+  <div class="conteudo4">
+    <a href="#paginadohakyn" title="Sobre mim">Sobre mim</a>
+  </div>
+
+  <div class="conteudo5">
+    <h1 id="paginadohakyn">Sobre mim</h1>
+    <p>Página em desenvolvimento</p>
+  </div>
+
+  <footer class="footer">
+    <p>&copy; 2025 desenvolvido por Oliveira, todos os direitos reservados.</p>
+  </footer>
+
+</body>
+</html>
